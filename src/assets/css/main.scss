@@ -1,0 +1,172 @@
+$bg-color: #FFFFFF;
+$navbar-link-color: #4B5563;
+$navbar-btn-color: #16A34A;
+$navbar-btn-text-color: #FFFFFF;
+$navbar-btn-hover: #21C05C;
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    font-size: 1.6rem;
+    background-color: $bg-color;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+button {
+    border: none;
+    color: inherit;
+}
+
+// Mobile First - Estilos base para mobile
+.header {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    width: 95%;
+    margin: 1.5rem auto;
+    height: 120px;
+    position: relative;
+
+    &::before {
+        content: '';
+        position: absolute;
+        bottom: -1rem;
+        left: 0;
+        width: 100%;
+        height: 0.1rem;
+        background: #B4AEAE;
+    }
+
+    img {
+        width: 200px;
+        height: 35px;
+        align-self: flex-start;
+    }
+
+    .navbar {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        width: 100%;
+        gap: 1rem;
+
+        ul {
+            display: flex;
+            gap: 1.5rem;
+            list-style: none;
+        }
+
+        &__link {
+            color: $navbar-link-color;
+            font-size: 1.4rem;
+
+            &:hover {
+                text-decoration: underline;
+                opacity: 0.7;
+            }
+        }
+
+        button#start-now-btn {
+            background-color: $navbar-btn-color;
+            color: $navbar-btn-text-color;
+            width: 13rem;
+            height: 5rem;
+            border-radius: 0.6rem;
+            font-size: 1.4rem;
+
+            &:hover {
+                background-color: $navbar-btn-hover;
+            }
+        }
+    }
+}
+
+// Tablet - breakpoint médio
+@media (min-width: 768px) and (max-width: 1024px) {
+    .header {
+        flex-direction: row;
+        height: 80px;
+        margin: 2rem auto;
+        width: 90%;
+
+        img {
+            width: 220px;
+            height: 39px;
+            align-self: center;
+        }
+
+        .navbar {
+            justify-content: flex-end;
+            gap: 2.5rem;
+
+            ul {
+                gap: 2.5rem;
+            }
+
+            &__link {
+                font-size: 1.5rem;
+            }
+
+            button#start-now-btn {
+                width: 15rem;
+                height: 5.5rem;
+                font-size: 1.5rem;
+            }
+        }
+    }
+}
+
+// Desktop - breakpoint maior
+@media (min-width: 1025px) {
+    .header {
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
+        max-width: 1106px;
+        margin: 3rem auto;
+        height: 60px;
+
+        img {
+            width: 245px;
+            height: 43px;
+            align-self: center;
+        }
+
+        &::before {
+            bottom: -1.5rem;
+        }
+
+        .navbar {
+            justify-content: flex-end;
+            gap: 3.3rem;
+
+            ul {
+                gap: 3.3rem;
+            }
+
+            &__link {
+                font-size: 1.6rem;
+            }
+
+            button#start-now-btn {
+                width: 18.9rem;
+                height: 6rem;
+                font-size: 1.6rem;
+            }
+        }
+    }
+}
