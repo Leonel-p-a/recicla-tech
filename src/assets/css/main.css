@@ -160,6 +160,26 @@ main {
   width: 70%;
 }
 
+.stats {
+  background-color: #F3F5F8;
+  display: flex;
+  justify-content: space-between;
+  gap: 1rem;
+  padding: 2.5rem 1.5rem;
+  margin-top: 5rem;
+}
+.stats div {
+  flex-basis: 10rem;
+}
+.stats h2 {
+  color: #16A34A;
+  text-align: center;
+}
+.stats p {
+  font-size: 1rem;
+  text-align: center;
+}
+
 @media (min-width: 768px) and (max-width: 1024px) {
   .header {
     flex-direction: row;
@@ -218,6 +238,15 @@ main {
   }
   .hero__image img {
     width: 100%;
+  }
+  .stats {
+    justify-content: space-around;
+  }
+  .stats div {
+    flex-basis: 15rem;
+  }
+  .stats p {
+    font-size: 1.2rem;
   }
 }
 @media (min-width: 1025px) {
@@ -284,5 +313,14 @@ main {
   }
   .hero__image img {
     width: 100%;
+  }
+  .stats {
+    justify-content: space-around;
+  }
+  .stats div {
+    flex-basis: 20rem;
+  }
+  .stats p {
+    font-size: 1.2rem;
   }
 }/*# sourceMappingURL=main.css.map */
