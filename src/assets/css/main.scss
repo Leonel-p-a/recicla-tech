@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
 
 $bg-color: #FFFFFF;
 $text-color: #4B5563;
@@ -8,6 +9,7 @@ $navbar-btn-text-color: #FFFFFF;
 $acquire-btn-color: #2563EB;
 $navbar-btn-hover: #21C05C;
 $acquire-btn-hover: #2564eb42;
+$how-it-works-cards-bg-color: #F3F5F8;
 
 * {
     margin: 0;
@@ -29,6 +31,11 @@ h2,
 p,
 a {
     font-family: "Poppins", sans-serif;
+}
+
+h3,
+h4 {
+    font-family: "Inter", sans-serif;
 }
 
 p {
@@ -119,13 +126,16 @@ main {
     display: flex;
     flex-direction: column;
     margin: auto;
-    padding: 3rem .5rem;
-    width: 95%;
+    // padding: 3rem 1rem;
+    width: 100%;
 }
 
 .hero {
     display: flex;
     flex-direction: column;
+    width: 100%;
+    margin: auto;
+    padding: 3rem 1rem;
 
     &__text {
         margin-bottom: 3rem;
@@ -200,6 +210,9 @@ main {
     gap: 1rem;
     padding: 2.5rem 1.5rem;
     margin-top: 5rem;
+    width: 100%;
+    margin: auto;
+    
 
     div {
         flex-basis: 10rem;
@@ -213,6 +226,80 @@ main {
     p {
         font-size: 1rem;
         text-align: center;
+    }
+}
+
+.how-it-works {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 5rem;
+    margin-top: 5rem;
+    padding: 2rem;
+
+    &__top {
+        text-align: center;
+        color: $title-color;
+
+        h2 {
+            margin-bottom: 2rem;
+        }
+    }
+
+    &__cards {
+        display: flex;
+        flex-direction: column;
+        gap: 2.5rem;
+
+        &__card {
+            display: flex;
+            flex-direction: column;
+            gap: 3rem;
+            background-color: $how-it-works-cards-bg-color;
+            border-radius: .8rem;
+            padding: 5.5rem 2rem;
+
+            &__top {
+                display: flex;
+                align-items: center;
+                gap: 1rem;
+                
+                h3 {
+                    font-weight: 400;
+                }
+                
+                .for-donors {
+                    color: $navbar-btn-color;
+                }
+
+                .for-acquirers {
+                    color: $acquire-btn-color;
+                }
+            }
+
+            &__content {
+                display: flex;
+                flex-direction: column;
+                gap: 2rem;
+            }
+
+            .list-item {
+                display: flex;
+                margin-top: 2rem;
+                gap: 1rem;
+
+                img {
+                    width: auto;
+                    height: 50%;
+                }
+
+                div {
+                    display: flex;
+                    flex-direction: column;
+                    gap: .5rem;
+                }
+            }
+        }
     }
 }
 
@@ -252,8 +339,7 @@ main {
 
     main {
         width: 100%;
-        max-width: 1106px;
-        padding: 4rem 4.5rem;
+        max-width: 1024px;
     }
 
     .hero {
@@ -261,6 +347,7 @@ main {
         flex-direction: row;
         justify-content: space-between;
         gap: 5rem;
+        padding: 4rem 4.5rem;
 
         &__content {
             display: flex;
@@ -294,6 +381,8 @@ main {
 
     .stats {
         justify-content: space-around;
+        width: 100%;
+        max-width: 1024px;
     
         div {
             flex-basis: 15rem;
@@ -301,6 +390,27 @@ main {
         
         p {
             font-size: 1.2rem;
+        }
+    }
+
+    .how-it-works {
+        width: 100%;
+        max-width: 1024px;
+        margin: 5rem auto;
+        padding: 5rem;
+    
+        &__top {
+            text-align: start;
+        }
+    
+        &__cards {
+            display: flex;
+            flex-direction: row;
+            gap: 2.5rem;
+    
+            &__card {
+                flex: 1;
+            }
         }
     }
 }
@@ -348,7 +458,7 @@ main {
 
     main {
         width: 100%;
-        max-width: 1106px;
+        // max-width: 1106px;
         padding: 4rem 0;
     }
 
@@ -357,6 +467,9 @@ main {
         flex-direction: row;
         justify-content: space-between;
         gap: 5rem;
+        // width: 100%;
+        max-width: 1106px;
+        // margin: auto;
 
         &__content {
             display: flex;
@@ -390,6 +503,9 @@ main {
 
     .stats {
         justify-content: space-around;
+        width: 100%;
+        max-width: 1536px;
+        margin: 5rem auto;
     
         div {
             flex-basis: 20rem;
@@ -397,6 +513,26 @@ main {
 
         p {
             font-size: 1.2rem;
+        }
+    }
+
+    .how-it-works {
+        width: 100%;
+        max-width: 1106px;
+        margin: 5rem auto;
+    
+        &__top {
+            text-align: start;
+        }
+    
+        &__cards {
+            display: flex;
+            flex-direction: row;
+            gap: 2.5rem;
+    
+            &__card {
+                flex: 1;
+            }
         }
     }
 }
