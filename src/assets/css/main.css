@@ -196,7 +196,7 @@ main {
   justify-content: center;
   gap: 5rem;
   margin-top: 5rem;
-  padding: 2rem;
+  padding: 2rem 2rem 8rem 2rem;
 }
 .how-it-works__top {
   text-align: center;

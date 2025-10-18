@@ -235,7 +235,7 @@ main {
     justify-content: center;
     gap: 5rem;
     margin-top: 5rem;
-    padding: 2rem;
+    padding: 2rem 2rem 8rem 2rem;
 
     &__top {
         text-align: center;
@@ -263,7 +263,7 @@ main {
                 display: flex;
                 align-items: center;
                 gap: 1rem;
-                
+
                 h3 {
                     font-weight: 400;
                 }
