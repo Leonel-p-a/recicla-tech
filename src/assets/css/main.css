@@ -252,6 +252,61 @@ main {
   gap: 0.5rem;
 }
 
+.available-products {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 5rem;
+  background-color: #F3F5F8;
+  width: 100%;
+  margin: auto;
+  padding: 5rem 2rem;
+}
+.available-products__top {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+.available-products__top h2 {
+  color: #1F2937;
+  padding-bottom: 1rem;
+}
+.available-products__cards {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 4rem;
+}
+.available-products__cards__card {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  border: 2px solid #21C05C;
+  border-radius: 1rem;
+  width: 70%;
+}
+.available-products__cards__card .content {
+  padding: 4rem 1rem;
+}
+.available-products__cards__card p {
+  font-size: 1.4rem;
+  margin: 1.5rem 0;
+}
+.available-products__cards__card button {
+  background-color: #16A34A;
+  color: #FFFFFF;
+  border: 0.1rem solid #21C05C;
+  width: 13rem;
+  height: 3rem;
+  border-radius: 0.6rem;
+  font-size: 1.4rem;
+}
+.available-products__cards__card button:hover {
+  background-color: #21C05C;
+}
+
 @media (min-width: 768px) and (max-width: 1024px) {
   .header {
     flex-direction: row;
@@ -339,6 +394,27 @@ main {
   .how-it-works__cards__card {
     flex: 1;
   }
+  .available-products__top {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+  }
+  .available-products__top h2 {
+    color: #1F2937;
+    padding-bottom: 1rem;
+  }
+  .available-products__top p {
+    font-size: 1.6rem;
+  }
+  .available-products__cards__card {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    border: 2px solid #21C05C;
+    border-radius: 1rem;
+    width: 50%;
+  }
 }
 @media (min-width: 1025px) {
   .header {
@@ -375,6 +451,7 @@ main {
   }
   main {
     width: 100%;
+    max-width: 1536px;
     padding: 4rem 0;
   }
   .hero {
@@ -432,5 +509,28 @@ main {
   }
   .how-it-works__cards__card {
     flex: 1;
+  }
+  .available-products {
+    max-width: 1536px;
+  }
+  .available-products__cards {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 4rem;
+    width: 100%;
+  }
+  .available-products__cards__card {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    border: 3px solid #21C05C;
+    border-radius: 1rem;
+    width: 20%;
+  }
+  .available-products__cards__card button {
+    height: 4rem;
   }
 }/*# sourceMappingURL=main.css.map */

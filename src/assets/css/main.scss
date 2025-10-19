@@ -126,7 +126,6 @@ main {
     display: flex;
     flex-direction: column;
     margin: auto;
-    // padding: 3rem 1rem;
     width: 100%;
 }
 
@@ -303,6 +302,69 @@ main {
     }
 }
 
+.available-products {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 5rem;
+    background-color: $how-it-works-cards-bg-color;
+    width: 100%;
+    margin: auto;
+    padding: 5rem 2rem;
+
+    &__top {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        
+        h2 {
+            color: $title-color;
+            padding-bottom: 1rem;
+        }
+    }
+
+    &__cards {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 4rem;
+
+        &__card {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            text-align: center;
+            border: 2px solid #21C05C;
+            border-radius: 1rem;
+            width: 70%;
+
+            .content {
+                padding: 4rem 1rem;
+            }
+
+            p {
+                font-size: 1.4rem;
+                margin: 1.5rem 0;
+            }
+
+            button {
+                background-color: $navbar-btn-color;
+                color: $navbar-btn-text-color;
+                border: 0.1rem solid $navbar-btn-hover;
+                width: 13rem;
+                height: 3rem;
+                border-radius: 0.6rem;
+                font-size: 1.4rem;
+
+                &:hover {
+                    background-color: $navbar-btn-hover;
+                }
+            }
+        }
+    }
+}
+
 // Tablet - breakpoint médio
 @media (min-width: 768px) and (max-width: 1024px) {
     .header {
@@ -413,6 +475,37 @@ main {
             }
         }
     }
+
+    .available-products {
+    
+        &__top {
+            display: flex;
+            flex-direction: column;
+            text-align: center;
+            
+            h2 {
+                color: $title-color;
+                padding-bottom: 1rem;
+            }
+
+            p {
+                font-size: 1.6rem;
+            }
+        }
+    
+        &__cards {
+    
+            &__card {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                text-align: center;
+                border: 2px solid #21C05C;
+                border-radius: 1rem;
+                width: 50%;
+            }
+        }
+    }
 }
 
 // Desktop - breakpoint maior
@@ -458,7 +551,7 @@ main {
 
     main {
         width: 100%;
-        // max-width: 1106px;
+        max-width: 1536px;
         padding: 4rem 0;
     }
 
@@ -467,9 +560,7 @@ main {
         flex-direction: row;
         justify-content: space-between;
         gap: 5rem;
-        // width: 100%;
         max-width: 1106px;
-        // margin: auto;
 
         &__content {
             display: flex;
@@ -532,6 +623,33 @@ main {
     
             &__card {
                 flex: 1;
+            }
+        }
+    }
+
+    .available-products {
+        max-width: 1536px;
+    
+        &__cards {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: center;
+            gap: 4rem;
+            width: 100%;
+    
+            &__card {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                text-align: center;
+                border: 3px solid #21C05C;
+                border-radius: 1rem;
+                width: 20%;
+
+                button {
+                    height: 4rem;
+                }
             }
         }
     }
