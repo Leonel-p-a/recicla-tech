@@ -452,12 +452,21 @@ main {
             background-color: $navbar-btn-color;
             color: $navbar-btn-text-color;
             border: 0.1rem solid $navbar-btn-hover;
+
+            &:hover {
+                background-color: $navbar-btn-hover;
+            }
         }
     
         .know-more-button {
             background-color: transparent;
             color: $navbar-btn-color;
             border: 1px solid $navbar-btn-color;
+
+            &:hover {
+                background-color: $navbar-btn-color;
+                color: $navbar-btn-text-color;
+            }
         }
     }
 }

@@ -384,10 +384,17 @@ main {
   color: #FFFFFF;
   border: 0.1rem solid #21C05C;
 }
+.make-the-difference .buttons .start-now-button:hover {
+  background-color: #21C05C;
+}
 .make-the-difference .buttons .know-more-button {
   background-color: transparent;
   color: #16A34A;
   border: 1px solid #16A34A;
+}
+.make-the-difference .buttons .know-more-button:hover {
+  background-color: #16A34A;
+  color: #FFFFFF;
 }
 
 @media (min-width: 768px) and (max-width: 1024px) {
