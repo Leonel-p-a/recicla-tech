@@ -397,6 +397,73 @@ main {
   color: #FFFFFF;
 }
 
+.footer {
+  display: flex;
+  flex-direction: column;
+  gap: 5rem;
+  background-color: #1F2937;
+  padding: 5rem 2rem 3rem 2rem;
+}
+.footer p,
+.footer a {
+  font-size: 0.8rem;
+  color: #c4c7cd;
+}
+.footer__top-middle {
+  display: flex;
+  flex-direction: column;
+  gap: 5rem;
+}
+.footer__top {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.5rem;
+}
+.footer__top img {
+  width: 20%;
+}
+.footer__middle {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  padding-left: 1.5rem;
+}
+.footer__middle .bold-p {
+  font-weight: bold;
+  color: #FFFFFF;
+  margin-bottom: 1rem;
+}
+.footer__middle p,
+.footer__middle a {
+  margin-bottom: 0.5rem;
+}
+.footer__middle a {
+  display: block;
+}
+.footer__middle a:hover {
+  color: #FFFFFF;
+}
+.footer__middle img {
+  width: 2rem;
+  margin: 0.5rem 0.5rem 0 0;
+  cursor: pointer;
+}
+.footer__bottom {
+  text-align: center;
+  position: relative;
+  padding-top: 2rem;
+}
+.footer__bottom::before {
+  content: "";
+  position: absolute;
+  top: -1rem;
+  left: 0;
+  width: 100%;
+  height: 0.1rem;
+  background: #B4AEAE;
+}
+
 @media (min-width: 768px) and (max-width: 1024px) {
   .header {
     flex-direction: row;
@@ -640,5 +707,36 @@ main {
   }
   .talking-about__cards__card .stars {
     width: 50%;
+  }
+  .footer {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    gap: 5rem;
+    background-color: #1F2937;
+    padding: 5rem 2rem 3rem 2rem;
+  }
+  .footer p,
+  .footer a {
+    font-size: 1.4rem;
+    color: #c4c7cd;
+  }
+  .footer__top-middle {
+    flex-direction: row;
+  }
+  .footer__top {
+    flex-direction: column;
+    justify-content: left;
+    gap: 1.5rem;
+  }
+  .footer__top img {
+    width: 50%;
+    align-self: flex-start;
+  }
+  .footer__middle {
+    gap: 8rem;
+  }
+  .footer__bottom {
+    width: 100%;
   }
 }/*# sourceMappingURL=main.css.map */

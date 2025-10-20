@@ -11,6 +11,7 @@ $navbar-btn-hover: #21C05C;
 $acquire-btn-hover: #2564eb42;
 $how-it-works-cards-bg-color: #F3F5F8;
 $card-border: #9CA3AF;
+$footer-text-color: #c4c7cd;
 
 * {
     margin: 0;
@@ -471,6 +472,85 @@ main {
     }
 }
 
+.footer {
+    display: flex;
+    flex-direction: column;
+    gap: 5rem;
+    background-color: $title-color;
+    padding: 5rem 2rem 3rem 2rem;
+
+    p,
+    a {
+        font-size: .8rem;
+        color: $footer-text-color;
+    }
+
+    &__top-middle {
+        display: flex;
+        flex-direction: column;
+        gap: 5rem;
+    }
+
+    &__top {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: .5rem;
+
+        img {
+            width: 20%;
+        }
+    }
+
+    &__middle {
+        display: flex;
+        justify-content: center;
+        gap: 2rem;
+        padding-left: 1.5rem;
+
+        .bold-p {
+            font-weight: bold;
+            color: $navbar-btn-text-color;
+            margin-bottom: 1rem;
+        }
+
+        p,
+        a {
+            margin-bottom: .5rem;
+        }
+
+        a {
+            display: block;
+
+            &:hover {
+                color: #FFFFFF;
+            }
+        }
+
+        img {
+            width: 2rem;
+            margin: .5rem .5rem 0 0;
+            cursor: pointer;
+        }
+    }
+
+    &__bottom {
+        text-align: center;
+        position: relative;
+        padding-top: 2rem;
+
+        &::before {
+            content: '';
+            position: absolute;
+            top: -1rem;
+            left: 0;
+            width: 100%;
+            height: .1rem;            
+            background: #B4AEAE;
+        }
+    }
+}
+
 // Tablet - breakpoint médio
 @media (min-width: 768px) and (max-width: 1024px) {
     .header {
@@ -789,6 +869,44 @@ main {
                     width: 50%;
                 }
             }
+        }
+    }
+
+    .footer {
+        display: flex;
+        flex-direction: column;
+        align-items: start;
+        gap: 5rem;
+        background-color: $title-color;
+        padding: 5rem 2rem 3rem 2rem;
+    
+        p,
+        a {
+            font-size: 1.4rem;
+            color: $footer-text-color;
+        }
+
+        &__top-middle {
+            flex-direction: row;
+        }
+    
+        &__top {
+            flex-direction: column;
+            justify-content: left;
+            gap: 1.5rem;
+
+            img {
+                width: 50%;
+                align-self: flex-start;
+            }
+        }
+    
+        &__middle {
+            gap: 8rem;
+        }
+
+        &__bottom {
+            width: 100%;
         }
     }
 }
