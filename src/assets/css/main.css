@@ -353,6 +353,43 @@ main {
   font-weight: normal;
 }
 
+.make-the-difference {
+  background-color: #F3F5F8;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  gap: 1rem;
+  padding: 5rem 1.5rem;
+  margin-top: 5rem;
+  width: 100%;
+  margin: auto;
+}
+.make-the-difference p {
+  color: #000;
+}
+.make-the-difference .buttons {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  margin-top: 3rem;
+}
+.make-the-difference .buttons button {
+  width: 13rem;
+  height: 3.5rem;
+  border-radius: 0.6rem;
+  font-size: 1.4rem;
+}
+.make-the-difference .buttons .start-now-button {
+  background-color: #16A34A;
+  color: #FFFFFF;
+  border: 0.1rem solid #21C05C;
+}
+.make-the-difference .buttons .know-more-button {
+  background-color: transparent;
+  color: #16A34A;
+  border: 1px solid #16A34A;
+}
+
 @media (min-width: 768px) and (max-width: 1024px) {
   .header {
     flex-direction: row;
@@ -542,7 +579,6 @@ main {
   .stats {
     justify-content: space-around;
     width: 100%;
-    max-width: 1536px;
     margin: 5rem auto;
   }
   .stats div {
@@ -566,9 +602,6 @@ main {
   }
   .how-it-works__cards__card {
     flex: 1;
-  }
-  .available-products {
-    max-width: 1536px;
   }
   .available-products__cards {
     display: flex;
