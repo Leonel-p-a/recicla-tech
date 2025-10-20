@@ -10,6 +10,7 @@ $acquire-btn-color: #2563EB;
 $navbar-btn-hover: #21C05C;
 $acquire-btn-hover: #2564eb42;
 $how-it-works-cards-bg-color: #F3F5F8;
+$card-border: #9CA3AF;
 
 * {
     margin: 0;
@@ -365,6 +366,60 @@ main {
     }
 }
 
+.talking-about {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 5rem;
+    margin-top: 2rem;
+    padding: 2rem 2rem 5rem 2rem;
+
+    &__top {
+        text-align: center;
+
+        h2 {
+            color: $title-color;
+            margin-bottom: 1rem;
+        }
+
+        h3 {
+            color: $text-color;
+            font-weight: normal;
+        }
+    }
+
+    &__cards {
+        display: flex;
+        flex-direction: column;
+        gap: 5rem;
+
+        &__card {
+            display: flex;
+            flex-direction: column;
+            gap: 2rem;
+            border: 1px solid $card-border;
+            border-left: 3px solid $card-border;
+            border-radius: 1rem;
+            padding: 2rem;
+
+            .stars {
+                width: 50%;
+            }
+
+            .user-content {
+                display: flex;
+                align-items: center;
+                gap: 1rem;
+            }
+
+            .person-type {
+                color: $text-color;
+                font-weight: normal;
+            }
+        }
+    }
+}
+
 // Tablet - breakpoint médio
 @media (min-width: 768px) and (max-width: 1024px) {
     .header {
@@ -503,6 +558,23 @@ main {
                 border: 2px solid #21C05C;
                 border-radius: 1rem;
                 width: 50%;
+            }
+        }
+    }
+
+    .talking-about {
+    
+        &__cards {
+            flex-direction: row;
+            gap: 5rem;
+            padding: 0 2rem;
+    
+            &__card {
+                width: 30%;
+    
+                .stars {
+                    width: 50%;
+                }
             }
         }
     }
@@ -649,6 +721,23 @@ main {
 
                 button {
                     height: 4rem;
+                }
+            }
+        }
+    }
+
+    .talking-about {
+    
+        &__cards {
+            flex-direction: row;
+            gap: 5rem;
+            padding: 0 2rem;
+    
+            &__card {
+                width: 30%;
+    
+                .stars {
+                    width: 50%;
                 }
             }
         }
