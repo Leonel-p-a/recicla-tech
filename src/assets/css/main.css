@@ -678,23 +678,22 @@ main {
     flex: 1;
   }
   .available-products__cards {
-    display: flex;
     flex-direction: row;
-    align-items: center;
-    justify-content: center;
-    gap: 4rem;
-    width: 100%;
   }
   .available-products__cards__card {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    text-align: center;
-    border: 3px solid #21C05C;
-    border-radius: 1rem;
-    width: 20%;
+    max-width: 299px;
+    max-height: 436px;
+    padding: 1.7rem 0 0 0;
+  }
+  .available-products__cards__card .content {
+    padding: 4rem 1rem;
+  }
+  .available-products__cards__card p {
+    font-size: 1.4rem;
+    margin: 1.5rem 0;
   }
   .available-products__cards__card button {
+    width: 13rem;
     height: 4rem;
   }
   .talking-about__cards {
