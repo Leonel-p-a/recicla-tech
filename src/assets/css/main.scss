@@ -664,31 +664,27 @@ main {
 
     .available-products {
     
-        &__top {
-            display: flex;
-            flex-direction: column;
-            text-align: center;
-            
-            h2 {
-                color: $title-color;
-                padding-bottom: 1rem;
-            }
-
-            p {
-                font-size: 1.6rem;
-            }
-        }
-    
         &__cards {
+            flex-wrap: wrap;
     
             &__card {
-                display: flex;
-                flex-direction: column;
-                justify-content: center;
-                text-align: center;
-                border: 2px solid #21C05C;
-                border-radius: 1rem;
-                width: 50%;
+                max-width: 299px;
+                max-height: 436px;
+                padding: 1.7rem 0 0 0;
+    
+                .content {
+                    padding: 4rem 1rem;
+                }
+    
+                p {
+                    font-size: 1.4rem;
+                    margin: 1.5rem 0;
+                }
+    
+                button {
+                    width: 13rem;
+                    height: 4rem;
+                }
             }
         }
     }
@@ -707,6 +703,38 @@ main {
                     width: 50%;
                 }
             }
+        }
+    }
+
+    .footer {
+    
+        p,
+        a {
+            font-size: 1.4rem;
+            color: $footer-text-color;
+        }
+
+        &__top-middle {
+            flex-direction: row;
+        }
+    
+        &__top {
+            flex-direction: column;
+            justify-content: left;
+            gap: 1.5rem;
+
+            img {
+                width: 50%;
+                align-self: flex-start;
+            }
+        }
+    
+        &__middle {
+            gap: 8rem;
+        }
+
+        &__bottom {
+            width: 100%;
         }
     }
 }
